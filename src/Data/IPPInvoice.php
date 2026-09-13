@@ -339,6 +339,18 @@ class IPPInvoice
 	public $ConvenienceFeeDetail;
 	/**
 	 * @Definition
+								Product: QBO
+								Description: Per-invoice surcharging settings indicating whether surcharging is enabled and for which payment methods
+
+	 * @xmlType element
+	 * @xmlNamespace http://schema.intuit.com/finance/v3
+	 * @xmlMinOccurs 0
+	 * @xmlName EnabledSurchargeInfo
+	 * @var com\intuit\schema\finance\v3\IPPEnabledSurchargeInfo
+	 */
+	public $EnabledSurchargeInfo;
+	/**
+	 * @Definition
 								Product: All
 								Description: QBO:  Security code associated with Sharable link of the invoice for external users
 
