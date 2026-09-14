@@ -3,26 +3,26 @@ namespace QuickBooksOnline\API\Data;
 
 /**
  * @xmlNamespace http://schema.intuit.com/finance/v3
- * @xmlType IntuitEntity
+ * @xmlType 
  * @xmlName IPPEnabledSurchargeInfo
  * @var IPPEnabledSurchargeInfo
- * @xmlDefinition
+ * @xmlDefinition 
 				Product: QBO
 				Description: Per-invoice surcharging settings
-
+			
  */
 class IPPEnabledSurchargeInfo
-	extends IPPIntuitEntity	{
+	{
 
-		/**
-		* Initializes this object, optionally with pre-defined property values
-		*
+		/**                                                                       
+		* Initializes this object, optionally with pre-defined property values    
+		*                                                                         
 		* Initializes this object and it's property members, using the dictionary
-		* of key/value pairs passed as an optional argument.
-		*
-		* @param dictionary $keyValInitializers key/value pairs to be populated into object's properties
-		* @param boolean $verbose specifies whether object should echo warnings
-		*/
+		* of key/value pairs passed as an optional argument.                      
+		*                                                                         
+		* @param dictionary $keyValInitializers key/value pairs to be populated into object's properties 
+		* @param boolean $verbose specifies whether object should echo warnings   
+		*/                                                                        
 		public function __construct($keyValInitializers=array(), $verbose=FALSE)
 		{
 			foreach($keyValInitializers as $initPropName => $initPropVal)
@@ -39,12 +39,12 @@ class IPPEnabledSurchargeInfo
 			}
 		}
 
-
+	
 	/**
-	 * @Definition
-								Product: QBO
-								Description: Whether surcharging is enabled for the invoice
-
+	 * @Definition 
+						Product: QBO
+						Description: Whether surcharging is enabled for this invoice
+					
 	 * @xmlType element
 	 * @xmlNamespace http://schema.intuit.com/finance/v3
 	 * @xmlMinOccurs 0
@@ -53,10 +53,10 @@ class IPPEnabledSurchargeInfo
 	 */
 	public $Enabled;
 	/**
-	 * @Definition
-								Product: QBO
-								Description: Card surcharge settings
-
+	 * @Definition 
+						Product: QBO
+						Description: Credit card-specific surcharge settings
+					
 	 * @xmlType element
 	 * @xmlNamespace http://schema.intuit.com/finance/v3
 	 * @xmlMinOccurs 0
@@ -65,10 +65,10 @@ class IPPEnabledSurchargeInfo
 	 */
 	public $Card;
 	/**
-	 * @Definition
-								Product: QBO
-								Description: ACH surcharge settings
-
+	 * @Definition 
+						Product: QBO
+						Description: ACH-specific surcharge settings
+					
 	 * @xmlType element
 	 * @xmlNamespace http://schema.intuit.com/finance/v3
 	 * @xmlMinOccurs 0
